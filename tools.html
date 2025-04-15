@@ -160,6 +160,30 @@
             font-weight: bold;
         }
 
+        .content-button {
+        text-align: center;
+        padding: 20px;
+    }
+
+        .button-link {
+            position: fixed; /* 固定定位 */
+            top: 50%; /* 垂直居中 */
+            right: 350px; /* 离右侧 20px */
+            background-color: #1b2bbb; /* 设置背景色 */
+            color: white; /* 设置文字颜色 */
+            padding: 15px 32px; /* 设置按钮的内边距 */
+            text-align: center; /* 文字居中 */
+            text-decoration: none; /* 去除链接下划线 */
+            border-radius: 5px; /* 设置圆角 */
+            font-size: 16px; /* 设置字体大小 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 设置阴影 */
+        }
+
+        .button-link:hover {
+        background-color: #450ae9; /* 鼠标悬停时的背景色 */
+        cursor: pointer; /* 鼠标悬停时的光标样式 */
+        }
+
         .content-card {
             background: var(--card-bg);
             backdrop-filter: blur(10px);
@@ -327,7 +351,8 @@
     <div class="container">
         <header>
             <h1>LoongArch工具链</h1>
-            <p>LA开源工具链是为支持LoongArch架构的开发人员提供的一系列开源工具和库。</p>
+            <p>本部分为支持LoongArch架构的开发人员提供一系列开源工具和库。它包括了编译器、调试器、模拟器和相关工具，能够帮助开发人员在LoongArch平台上进行有效的开发和调试工作。</p>
+            <a href="https://460242561.github.io/la-web/index.html" class="button-link"><i class="material-icons">home</i>返回主界面</a>
         </header>
 
         <div class="nav-card">

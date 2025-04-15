@@ -167,6 +167,30 @@
             font-weight: bold;
         }
 
+        .content-button {
+        text-align: center;
+        padding: 20px;
+    }
+
+        .button-link {
+            position: fixed; /* 固定定位 */
+            top: 50%; /* 垂直居中 */
+            right: 350px; /* 离右侧 20px */
+            background-color: #1b2bbb; /* 设置背景色 */
+            color: white; /* 设置文字颜色 */
+            padding: 15px 32px; /* 设置按钮的内边距 */
+            text-align: center; /* 文字居中 */
+            text-decoration: none; /* 去除链接下划线 */
+            border-radius: 5px; /* 设置圆角 */
+            font-size: 16px; /* 设置字体大小 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 设置阴影 */
+        }
+
+        .button-link:hover {
+        background-color: #450ae9; /* 鼠标悬停时的背景色 */
+        cursor: pointer; /* 鼠标悬停时的光标样式 */
+        }
+
         .content-card {
             background: var(--card-bg);
             backdrop-filter: blur(10px);
@@ -334,7 +358,8 @@
     <div class="container">
         <header>
             <h1>LoongArch课程资源</h1>
-            <p>该部分提供了与LoongArch架构相关的课程资源，包括教学大纲、实验指导和课程内容。</p>
+            <p>本部分提供基于LoongArch指令系统的课程资源，包括从计算机系统导论、计算机组成、计算机体系结构、操作系统、编译原理到嵌入式系统开发、SoC设计等课程的教案、实验指导、慕课、习题等各项资源。</p>
+            <a href="https://460242561.github.io/la-web/index.html" class="button-link"><i class="material-icons">home</i>返回主界面</a>
         </header>
 
         <div class="nav-card">
@@ -358,14 +383,7 @@
         </div>
         <div class="section" id="docs1">
             <h2><a href="">计算机系统课程</a></h2>
-            <h3>1.基于LoongArch体系的计算机系统能力课程教学培训与实施 - 东北大学-鲍玉斌</h3>
-            <div style="white-space: nowrap;">
-                  <a href="" style="color: black;margin-right: 1rem;">视频</a>
-                  <a href="" style="color: black;margin-right: 1rem;">实验指导书</a>
-                  <a href="" style="color: black;margin-right: 1rem;">教学课件</a>
-                  <a href=""style="color: black;margin-right: 1rem;">代码</a>
-            </div>
-            <h3>2.计算机系统导论（LoongArch） - 南京大学-袁春风 </h3>
+            <h3>1.计算机系统导论（LoongArch） - 南京大学</h3>
             <div style="white-space: nowrap;">
                   <a href="https://pan.baidu.com/s/1m45DsCnHeBDzliCYewfYRg?pwd=1234" style="color: black;margin-right: 1rem;">文档链接</a>
                   <a href="https://www.bilibili.com/video/BV134421S7PB/?spm_id_from=333.999.0.0&vd_source=5aa9cd42ce9d0420a427ea7158eef6c5" style="color: black;margin-right: 1rem;">视频</a>
@@ -383,7 +401,7 @@
 
         <div class="section" id="docs3">
             <h2><a href="">计算机体系结构课程</a></h2>
-            <h3>1.体系结构六讲 - 中国科学院大学-胡伟武</h3>
+            <h3>1.体系结构六讲 - 中国科学院大学</h3>
             <div style="white-space: nowrap;">
                   <a href="https://space.bilibili.com/1339327684/lists/2279890?type=season" style="color: black;margin-right: 1rem;">视频</a>
                   <a href="https://www.loongson.cn/kindeditor/attached/file/20220905/20220905064403_20930.pdf" style="color: black;margin-right: 1rem;">实验指导书</a>
@@ -392,20 +410,20 @@
         </div>
         <div class="section" id="docs4">
             <h2><a href="">操作系统实验课程</a></h2>
-            <h3>1.基于LoongArch的教学型操作系统内核 - 北京航空航天大学-王雷</h3>
+            <h3>1.基于LoongArch的教学型操作系统内核 - 北京航空航天大学</h3>
             <div style="white-space: nowrap;">
                 <a href="https://github.com/LoongsonLab/buaa-oskernel-for-loongarch/blob/main/doc/LA32R%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%AF%BC%E6%89%8B%E5%86%8C.pdf" style="color: black;margin-right: 1rem;">实验指导书</a>
                 <a href="https://github.com/LoongsonLab/buaa-oskernel-for-loongarch/blob/main/doc/LA32R%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FLab0%E6%95%99%E5%AD%A6%E8%AF%BE%E4%BB%B6.pdf" style="color: black;margin-right: 1rem;">教学课件</a>
                 <a href="https://github.com/LoongsonLab/buaa-oskernel-for-loongarch/tree/main/lab1"style="color: black;margin-right: 1rem;">代码</a>
             </div>
-            <h3>2.基于LoongArch指令系统的Maque操作系统 - 兰州大学-周庆国</h3>
+            <h3>2.基于LoongArch指令系统的Maque操作系统 - 兰州大学</h3>
             <div style="white-space: nowrap;">
                   <a href="https://www.bilibili.com/video/BV1EH4y1c7WX/?spm_id_from=333.337.search-card.all.click&vd_source=6c8fb6f0cf69f91b99b5d3c51e159e5c" style="color: black;margin-right: 1rem;">视频</a>
                   <a href="https://github.com/LoongsonLab/maqueos/blob/main/doc/%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf" style="color: black;margin-right: 1rem;">实验指导书</a>
                   <a href="https://gitee.com/dslab-lzu/maqueos"style="color: black;margin-right: 1rem;">代码</a>
             </div>
 
-            <h3>3.基于LoongArch32/64的Ucore操作系统移植及教学 - 重庆大学-陈咸彰</h3>
+            <h3>3.基于LoongArch32/64的Ucore操作系统移植及教学 - 重庆大学</h3>
             <div style="white-space: nowrap;">
                   <a href="https://space.bilibili.com/12553542/channel/series" style="color: black;margin-right: 1rem;">视频</a>
                   <a href="https://cyyself.github.io/ucore_la32_docs/" style="color: black;margin-right: 1rem;">实验指导书</a>
@@ -413,9 +431,10 @@
                   <a href="https://github.com/LoongsonLab/ucore-loongarch32/tree/master/kern"style="color: black;margin-right: 1rem;">LA32代码</a>
                   <a href="https://github.com/LoongsonLab/ucore-loongarch64/tree/main/kern"style="color: black;margin-right: 1rem;">LA64代码</a>
             </div>
-            <h3>4.深入理解操作系统 - 南开大学-宫晓利 </h3>
+            <h3>4.深入理解操作系统 - 南开大学</h3>
             <div style="white-space: nowrap;">
-                  <a href="https://pan.baidu.com/s/1np42yKeh8TCKAHiLqca7qA?pwd=1234" style="color: black;margin-right: 1rem;">视频</a>
+                  <a href="https://space.bilibili.com/1339327684/channel/collectiondetail?sid=2275415" style="color: black;margin-right: 1rem;">视频</a>
+                  <a href="https://github.com/NKU-EmbeddedSystem/OSbook"style="color: black;margin-right: 1rem;">代码</a>
             </div>
             <h3>5.基于LoongArch指令系统的XV6操作系统教学实验设置 - 深圳阿图科技有限公司  </h3>
             <div style="white-space: nowrap;">
@@ -428,7 +447,7 @@
         </div>
         <div class="section" id="docs5">
             <h2><a href="">编译原理课程</a></h2>
-            <h3>1.基于LoongArch的编译系统设计与实现 - 中国科学技术大学-李诚、徐伟</h3>
+            <h3>1.基于LoongArch的编译系统设计与实现 - 中国科学技术大学</h3>
             <div style="white-space: nowrap;">
                   <a href="https://pan.baidu.com/s/1gnepfdqBKcGczsOYdsGE-Q?pwd=1234" style="color: black;margin-right: 1rem;">文档链接</a>
                   <a href="https://space.bilibili.com/1339327684/lists/2276133?type=season" style="color: black;margin-right: 1rem;">视频</a>

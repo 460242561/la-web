@@ -88,6 +88,7 @@
         }
 
         .nav-card {
+
             background: var(--card-bg);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -105,6 +106,7 @@
         }
 
         .nav-links {
+            text-align: center;
             display: flex;
             justify-content: center;
             flex-direction: column; /* 设置为垂直排列 */
@@ -159,6 +161,33 @@
             color: #3498db;
             font-weight: bold;
         }
+
+
+        .content-button {
+        text-align: center;
+        padding: 20px;
+    }
+
+        .button-link {
+            position: fixed; /* 固定定位 */
+            top: 50%; /* 垂直居中 */
+            right: 350px; /* 离右侧 20px */
+            background-color: #1b2bbb; /* 设置背景色 */
+            color: white; /* 设置文字颜色 */
+            padding: 15px 32px; /* 设置按钮的内边距 */
+            text-align: center; /* 文字居中 */
+            text-decoration: none; /* 去除链接下划线 */
+            border-radius: 5px; /* 设置圆角 */
+            font-size: 16px; /* 设置字体大小 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 设置阴影 */
+        }
+
+        .button-link:hover {
+        background-color: #450ae9; /* 鼠标悬停时的背景色 */
+        cursor: pointer; /* 鼠标悬停时的光标样式 */
+        }
+
+        
 
         .content-card {
             background: var(--card-bg);
@@ -327,8 +356,11 @@
     <div class="container">
         <header>
             <h1>LoongArch架构相关文档</h1>
-            <p>该部分展示与LoongArch相关的文档资源，涵盖了从架构参考手册到各类编程手册的详细资料。</p>
+            <p>本部分提供与LoongArch指令系统相关的文档资源，涵盖从指令集参考手册到各类编程手册的详细资料。</p>
+                <!-- 右侧按钮 -->
+            <a href="https://460242561.github.io/la-web/index.html" class="button-link"><i class="material-icons">home</i>返回主界面</a>
         </header>
+
 
         <div class="nav-card">
             <div class="nav-links">
@@ -350,6 +382,7 @@
                 <a href="#docs6" class="nav-link">
                     <i class="material-icons">picture_as_pdf</i>6.计算机体系结构基础(LoongArch)(第三版)
                 </a>
+            <!-- 
                 <a href="#docs7" class="nav-link">
                     <i class="material-icons">picture_as_pdf</i>7.广东龙芯2K1000星云板用户手册V1.1
                 </a>
@@ -362,6 +395,7 @@
                 <a href="#docs10" class="nav-link">
                     <i class="material-icons">picture_as_pdf</i>10.龙芯平台软件迁移适配
                 </a>
+            -->
                 </a>
             </div>
         </div>
@@ -389,6 +423,7 @@
             <h2><a href="https://github.com/LoongsonLab/oscomp-documents/blob/main/pdf/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80(LoongArch)-3rd.pdf">计算机体系结构基础(LoongArch)(第三版)</a></h2>
             <p>这本书基于LoongArch指令集，深入探讨计算机体系结构的基础知识。它适合希望深入理解计算机体系结构原理和LoongArch架构的读者，提供了丰富的理论和实践案例。</p>
         </div>
+        <!--
         <div class="section" id="docs7">
             <h2><a href="https://github.com/LoongsonLab/oscomp-documents/blob/main/pdf/%E5%B9%BF%E4%B8%9C%E9%BE%99%E8%8A%AF2K1000%E6%98%9F%E4%BA%91%E6%9D%BF%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.1.pdf">广东龙芯2K1000星云板用户手册V1.1</a></h2>
             <p>该手册是针对广东龙芯2K1000星云开发板的官方用户指南，详细介绍了开发板的硬件结构、接口定义、功能模块以及使用方法。此外，手册还提供了开发环境的搭建指南和示例代码，帮助用户快速上手开发板的使用。</p>
@@ -405,6 +440,7 @@
             <h2><a href="https://github.com/LoongsonLab/oscomp-documents/blob/main/pdf/%E9%BE%99%E8%8A%AF%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BF%81%E7%A7%BB%E9%80%82%E9%85%8D--LoongArch.pdf">龙芯平台软件迁移适配--LoongArch</a></h2>
             <p>该文档旨在指导开发者将现有的软件系统迁移到基于LoongArch架构的龙芯平台上。内容包括LoongArch架构的特点、与其他主流架构的差异、迁移过程中可能遇到的问题以及相应的解决方案。文档还提供了编译器配置、库函数替换、系统调用适配等方面的详细说明，帮助开发者高效完成软件的迁移和优化。</p>
         </div>
+        -->
 
 
 
